@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="layer">
+    <div class="container">
+            <div class="text-center" id="head ">
+                <h1 class="text-uppercase fw-bold">CRUD</h1>
+                <p class="text-capitalize fs-3 text-white">storge management system</p>
+            </div>
+            <div id="input">
+                <input type="text" id="title" placeholder="title" class="  w-100 form-control">
+                <div class="prices d-flex">
+                    <input oninput="priceSum()" type="number"id="price" placeholder="price"class="form-control">
+                    <input oninput="priceSum()" type="number"id="taxes" placeholder="taxes"class="form-control">
+                    <input oninput="priceSum()" type="number"id="ads" placeholder="ads"class="form-control">
+                    <input oninput="priceSum()" type="number"id="discount" placeholder="discount"class="form-control">
+                    <small id="total" class=" p-3 rounded-5"></small>
+                </div>
+                <input type="text"id="count" placeholder="count"class="form-control w-100">
+                <input type="text"id="category" placeholder="category"class="form-control w-100">
+                <button onclick="submit()" id="creatbtn" class="BTN1 w-100 btn btn-success">create</button>
+            </div>
+            <div id="deleteAll">
+
+            </div>
+
+
+            <div class="output">
+                <input onkeyup="searchData(this.value)" type="text"  id="search" placeholder="search" class="form-control">
+                <div class="d-flex justify-content-evenly">
+                    <button onclick="searchInput(this.id)" id="searchTitle"  class="BTN1 form-control w-25 btn btn-success">search by title</button>
+                    <button onclick="searchInput(this.id)" id="searchCategory" class="BTN1 form-control w-25 btn btn-success">search by category</button>
+                </div>
+                <table class="table mt-5 text-center">
+                    <thead class="table-dark">
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>texes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

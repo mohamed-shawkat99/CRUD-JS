@@ -1,0 +1,53 @@
+
+
+body{
+    background-color:black;
+}
+section{
+    background-image:url(./66095332_l-1080x675.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.layer{
+    background-color: rgba(0, 0, 0, .7);
+    height: fit-content;
+}
+
+
+h1{
+    font-size: 100PX;
+    font-weight: bold;
+    color: white;
+}
+input{
+    margin: 10px;
+
+}
+
+input:focus{
+    scale: 1.1;
+}
+
+.prices input{
+    width: 20%;
+
+}
+.BTN1{
+    margin-left: 10px;
+    
+}
+.BTN1:hover{
+    letter-spacing:1px;
+    transition: all 0.5s;
+}
+
+small{
+    background-color: #8b0000;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+small::before{
+    content: "Total:";
+}
